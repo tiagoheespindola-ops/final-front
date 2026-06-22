@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Desenvolvedor Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>&lt;</span>TigasEspp.<span>/&gt;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Quem Sou</a></li>
+                <li><a href="#projetos">Minha Jornada</a></li>
+                <li><a href="#contato">Fale Comigo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Meu projeto inicial!</h1>
+            <p>Um projeto de Front-End desenvolvido por mim, Tiago :)</p>
+            <a href="#contato" class="btn-principal">Vamos conversar?</a>
+        </div>
+    </section>
+    <section id="sobre" class="conteudo">
+        <h2>Quem Sou</h2>
+        <div class="sobre-container">
+            <div class="sobre-foto">
+                <img src="img/IMG_2854.jpg" alt="E">
+            </div>
+            <div class="bloco-texto">
+                <p>Olá! Meu nome é Tiago Espindola e sou apaixonado por tecnologia e desenvolvimento de software. Atualmente, curso Engenharia de Software e foco meus estudos em desenvolvimento web com HTML, CSS e JavaScript, acreditando que uma base sólida é essencial para construir soluções eficientes. Estou sempre em busca de novos conhecimentos e desafios, com interesse em áreas como programação, inteligência artificial e análise de dados. 
+                </p>
+            </div>
+        </div>
+    </section>
+<section id="projetos" class="conteudo alternado">
+        <h2>Minha Jornada</h2>
+        <div class="grid-curriculo">
+            
+            <div class="card-jornada">
+                <h3>Educação e Cursos</h3>
+                <ul>
+                    <li>
+                        <strong>Engenharia de Software</strong>
+                        <p>UniSenai (2025 - 2029)</p>
+                    </li>
+                    <li>
+                        <strong>Algoritmos e Lógica de Programação</strong>
+                        <p>Udemy (2025)</p>
+                    </li>
+                    <li>
+                        <strong>Técnico em Eletromecânica</strong>
+                        <p>CEEP Curitiba (2021 - 2024)</p>
+                    </li>
+                    <li>
+                        <strong>Inglês</strong>
+                        <p>Wizard by Pearson (2021 - 2024)</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card-jornada">
+                <h3>Experiência Profissional</h3>
+                <ul>
+                    <li>
+                        <strong>Aprendiz Administrativo</strong>
+                        <span class="empresa">Maxton Logística</span>
+                        <p>Apoio administrativo com foco em logística, integrando equipes e otimizando processos com ferramentas de escritório.</p>
+                    </li>
+                    <li>
+                        <strong>Auxiliar de Produção</strong>
+                        <span class="empresa">Renault Geely</span>
+                        <p>Auxílio nas atividades de produção, organização do setor e rotinas diárias para garantir a eficiência na linha final da Carroceria.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section id="contato" class="conteudo">
+        <h2>Fale Comigo</h2>
+        <div class="caixa-contato">
+            <form id="meuFormulario">
+                <div class="campo">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                    <small class="msg-erro" id="erroNome"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Seu E-mail</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com">
+                    <small class="msg-erro" id="erroEmail"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Sua Mensagem</label>
+                    <textarea id="mensagem" rows="4" placeholder="O que você gostaria de dizer?"></textarea>
+                    <small class="msg-erro" id="erroMensagem"></small>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+
+            <div id="alertaSucesso" class="aviso-sucesso escondido">
+                <h3>Obrigado pelo contato!</h3>
+                <p>Sua mensagem foi validada e enviada!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - by Tiago Esp.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
